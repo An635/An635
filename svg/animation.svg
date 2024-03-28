@@ -1,38 +1,23 @@
-<svg fill='none' viewBox='0 0 1200 750' width='1200' heigh='750'>
+<svg fill='none' viewBox='0 0 1200 750' width='1200' heigh='750' xmlns='http://www.w3.org/2000/svg'>
     <foreignObject width='100%' height='100%'>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
+    <div xmlns='http://www.w3.org/1999/xhtml'>
+        <style>
         :root{
             --cape: #000;
             --bone: #ffc;
             --extra: linear-gradient(#0000 0 0);
             --b: #25b749;
         }
-
-        *{
-            padding:0;
-            margin:0;
-            box-sizing: border-box;
-        }
-
-        body{
-            height: 100vh;
-            font-family: 'Roboto Condensed', Arial;
-            background: linear-gradient(120deg, rgb(21, 21, 21), rgb(7, 9, 9)); 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+       
         .container {
             position: relative;
-            width: 600px;
-            height: 360px;
+            width:1000px;
+            height: 550px;
             border: 2px solid;
             border-radius: 40px;
             background: linear-gradient(#c9c9, #c9c0), #fff;
             overflow: hidden;
-            box-shadow: 0 0 50px #c9c, inset 0 0 0 2.5px #000;
+            box-shadow: 30px 40px 50px #c9c, inset 0 0 0 2.5px #000;   
         }
 
         .container *,
@@ -73,18 +58,13 @@
         .death {
             transform-origin: 50% 100%;
             animation: walkin 3s ease-out forwards,
-                shouldersmove 0.75s 4 ease-out forwards, walkout 3.75s 16s ease-out forwards,
-                shouldersmove 0.75s 5 16s ease-out forwards;
+            shouldersmove 0.75s 4 ease-out forwards, walkout 3.75s 16s ease-out forwards,
+            shouldersmove 0.75s 5 16s ease-out forwards;
             width: 45%;
             height: 75%;
             bottom: 0;
             left: 15%;
-            background: linear-gradient(var(--bone) 0 0) 54% 31% / 5% 15%,
-                linear-gradient(var(--bone) 0 0) 61% 31% / 5% 15%,
-                linear-gradient(var(--bone) 0 0) 68% 31% / 5% 15%,
-                conic-gradient(at 50% -30%, #0000 160deg, var(--cape) 0 200deg, #0000 0),
-                linear-gradient(to bottom left, var(--cape) 50%, #0000 0) 10% 0 / 40% 20%,
-                #f000;
+            background: linear-gradient(var(--bone) 0 0) 54% 31% / 5% 15%,linear-gradient(var(--bone) 0 0) 61% 31% / 5% 15%,linear-gradient(var(--bone) 0 0) 68% 31% / 5% 15%,conic-gradient(at 50% -30%, #0000 160deg, var(--cape) 0 200deg, #0000 0),linear-gradient(to bottom left, var(--cape) 50%, #0000 0) 10% 0 / 40% 20%,#f000;
             background-repeat: no-repeat;
         }
 
@@ -134,8 +114,8 @@
             top: 10%;
             left: 40%;
             background: var(--extra),
-                radial-gradient(circle at 35% 65%, #000 10px, #0000 12px),
-                radial-gradient(circle at 70% 65%, #000 10px, #0000 12px), var(--bone);
+            radial-gradient(circle at 35% 65%, #000 10px, #0000 12px),
+            radial-gradient(circle at 70% 65%, #000 10px, #0000 12px), var(--bone);
         }
 
         @keyframes movescythe {
@@ -211,16 +191,16 @@
         }
 
         .ring::after {
-            content: "TING";
+            content: "Ting";
             font-size: 20px;
             background: #00f3;
             padding-left: 23px;
             top: 7%;
             left: 28%;
             background: linear-gradient(#0000 45%, #000 0 55%, #0000 0) 0 0 / 18px 18px no-repeat,
-                linear-gradient(90deg, #0000 45%, #000 0 55%, #0000 0) 0 0 / 18px 18px no-repeat,
-                linear-gradient(45deg, #0000 48%, #000 0 52%, #0000 0) 0 0 / 18px 18px no-repeat,
-                linear-gradient(-45deg, #0000 48%, #000 0 52%, #0000 0) 0 0 / 18px 18px no-repeat;
+            linear-gradient(90deg, #0000 45%, #000 0 55%, #0000 0) 0 0 / 18px 18px no-repeat,
+            linear-gradient(45deg, #0000 48%, #000 0 52%, #0000 0) 0 0 / 18px 18px no-repeat,
+            linear-gradient(-45deg, #0000 48%, #000 0 52%, #0000 0) 0 0 / 18px 18px no-repeat;
         
         }
 
@@ -239,8 +219,7 @@
         }
 
         .phone {
-            animation: liftphone 1s 4.33s forwards,
-                    liftphone 1.25s 8.5s reverse ease-in forwards;
+            animation: liftphone 1s 4.33s forwards,liftphone 1.25s 8.5s reverse ease-in forwards;
             width: 7%;
             height: 19%;
             background: #000;
@@ -255,10 +234,10 @@
             content: "";
             width: 17.5px;
             height: 23px;
-            background: repeating-linear-gradient(var(--bone) 0 5px, #0000 0 8px);
             transform: rotate(5deg);
             top: 50%;
             right: -5px;
+            background: repeating-linear-gradient(var(--bone) 0 5px, #0000 0 8px);
         }
 
         @keyframes pop {
@@ -277,19 +256,20 @@
             font-size: 25px;
             background: #00000091;
             color: #fff;
-            border-radius: 5px;
-            top: 35%;
+            padding:6px;
+            border-radius: 6px;
+            top: 42%;
             left: 60%;
             scale: 0;
         }
 
         .bubble::before {
             content: "";
-            width: 5%;
+            width: 12%;
             height: 50%;
             background: linear-gradient(to bottom right, #00000091 50%, #0000 0);
             top: 100%;
-            left: 1%;;
+            left: 5%;;
             transform: skew(-20deg);
         }
 
@@ -302,24 +282,52 @@
                 transform: translate(-50%, -50%) rotateY(0deg);
             }
             100% {
-                transform: translate(-50%, -120%) rotateY(360deg);
+                transform: translate(-50%, -140%) rotateY(360deg);
             }
         }
 
         .text{
             position: absolute;
-            animation: pop 0.5s 5.75s cubic-bezier(0.175, 0.885, 0.32, 1.75) forwards,
-                    spin 0.8s 5.75s forwards;
+            animation: pop 0.5s 5.75s cubic-bezier(0.2, 0.885, 0.32, 1.75) forwards,spin 0.8s 5.75s forwards;
             scale: 0;
-            width: 50%;
+            width: 35%;
             background: rgba(0, 0, 0, 0.429);
             color:black;
-            border-radius: 100px;
+            border-radius: 20px;
             font-size: 25px;
-            padding-left: 10px;
-            transform: translate(-30%, -140%);
+            transform: translate(-50%, -140%);
             display: grid;
             place-items: center;
+        }
+        
+         @keyframes showsigh {
+            0%,
+            100% {
+                color: #0000;
+            }
+            25%,
+            75% {
+                color: #0008;
+            }
+        }
+
+        .sigh::before {
+            animation: showsigh 2.8s 7.5s linear forwards;
+            content: "...Humm...!!!";
+            top: 0;
+            left: 10px;
+            transform: translate(-30%, -130%) rotate(-10deg);
+            color: #0000;
+            font-size: 25px;
+        }       
+        .sigh {
+            animation: showsightext 4s 9s linear forwards;
+            font-size: 26px;
+            width: 40%;
+            left: 57%;
+            top: 40%;
+            text-align: center;
+            color: #0000;
         }
 
         @keyframes showsightext {
@@ -333,53 +341,23 @@
             }
         }
 
-        .sigh {
-            animation: showsightext 5s 11s linear forwards;
-            font-size: 20px;
-            width: 40%;
-            left: 57%;
-            top: 40%;
-            text-align: center;
-            color: #0000;
-        }
-
-        @keyframes showsigh {
-            0%,
-            100% {
-                color: #0000;
-            }
-            25%,
-            75% {
-                color: #0008;
-            }
-        }
-        .sigh::before {
-            animation: showsigh 2s 9.25s linear forwards;
-            content: "...HUMM...!!!";
-            top: 0;
-            left: 0;
-            transform: translate(-30%, -130%) rotate(-10deg);
-            font-size: 10px;
-            color: #0000;
-            font-size: 30px;
-}
-    </style>
-     <div class="container">
-            <div class="ring"></div>
-            <div class="phone"></div>
-            <div class="death">
-                <div class="eyesbrow"></div>
-            </div>
-            <div class="bubble">
-                <div class="text">
-                   Develops
+       
+        </style>
+        <div class="container">
+                <div class="ring"></div>
+                <div class="phone"></div>
+                <div class="death">
+                    <div class="eyesbrow"></div>
                 </div>
-                <span> Do you want finding to me ?? </span>
+                <div class="bubble">
+                    <div class="text">
+                      Boss
+                    </div>
+                    <span> Fix bug, please !!! </span>
+                </div>
+                <div class="sigh">We build our computer the way we build our cites: over time without a plan on top of ruins</div>
             </div>
-            <div class="sigh">
-            Think twice before you start programming or you will program twice before you start thinking...
-            </div>
-        </div>
-    
+    </div>
     </foreignObject>
 </svg>
+   
